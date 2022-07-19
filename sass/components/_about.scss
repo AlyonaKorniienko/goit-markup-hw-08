@@ -1,0 +1,44 @@
+/* -------------------------------------------------------------------------- */
+/*                                 ABOUT start                                */
+/* -------------------------------------------------------------------------- */
+
+.about__section {
+  padding-top: 0;
+}
+
+.about__title {
+  margin-bottom: 50px;
+}
+
+.about-grid {
+  display: flex;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__thumb {
+    position: relative;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: $white-text-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+}
+
+/* -------------------------------- ABOUT end ------------------------------- */

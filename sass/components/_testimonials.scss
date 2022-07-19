@@ -1,0 +1,40 @@
+/* -------------------------------------------------------------------------- */
+/*                             TESTIMONIALS start                             */
+/* -------------------------------------------------------------------------- */
+
+.testimonials {
+  display: flex;
+  margin-right: -30px;
+
+  &__item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__icon-wrap {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: $add-bg-color;
+    border-radius: $border-radius;
+  }
+
+  &__icon {
+    width: 270px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    line-height: 1.71;
+  }
+}
+
+/* ---------------------------- TESTIMONIALS end ---------------------------- */

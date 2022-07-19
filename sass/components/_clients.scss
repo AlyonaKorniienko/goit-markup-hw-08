@@ -1,0 +1,46 @@
+/* -------------------------------------------------------------------------- */
+/*                                CLIENTS start                               */
+/* -------------------------------------------------------------------------- */
+
+.clients__title {
+  margin-bottom: 50px;
+}
+
+.clients {
+  display: flex;
+
+  &__link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $border-client-cl;
+    border-radius: $border-radius;
+    color: #afb1b8;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      border: 1px solid $accent-color;
+    }
+  }
+
+  &__card:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__icon {
+    fill: currentColor;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .clients__link:hover &,
+    .clients__link:focus & {
+      fill: $accent-color;
+    }
+  }
+}
+
+/* ------------------------------- CLIENTS end ------------------------------ */

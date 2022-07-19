@@ -1,0 +1,139 @@
+/* -------------------------------------------------------------------------- */
+/*                                FOOTER  start                               */
+/* -------------------------------------------------------------------------- */
+
+.footer {
+  background-color: $footer-bg-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-contacts {
+  &__wrap {
+    margin-right: 70px;
+  }
+
+  &__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: $white-text-color;
+  }
+
+  &__address {
+    margin-bottom: 9px;
+
+    color: $white-text-color;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+
+  &__contact {
+    display: block;
+    color: $white-transparent-text-color;
+
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+
+  &__contact:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.footer__title {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: $white-text-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}
+
+.social {
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__link--dark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    color: $white-text-color;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+  }
+
+  &__icon--white {
+    fill: $white-text-color;
+  }
+}
+
+.subscr-wrap {
+  margin-left: auto;
+}
+
+.subscr {
+  &__form {
+    display: flex;
+  }
+
+  &__input {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    margin-right: 12px;
+
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: $border-radius;
+
+    color: $white-text-color;
+
+    &:focus-visible {
+      outline: transparent;
+      border: 1px solid $accent-color;
+    }
+
+    &::placeholder {
+      font-size: 16px;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  &__button {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__icon {
+    position: relative;
+    left: 10px;
+    top: 2px;
+  }
+}
+
+/* ------------------------------- FOOTER  end ------------------------------ */
