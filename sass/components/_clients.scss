@@ -3,15 +3,32 @@
 /* -------------------------------------------------------------------------- */
 
 .clients__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .clients {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  &__card {
+    width: 210px;
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
+  }
 
   &__link {
     display: flex;
-    width: 170px;
     height: 92px;
     align-items: center;
     justify-content: center;
@@ -27,9 +44,9 @@
     }
   }
 
-  &__card:not(:last-child) {
-    margin-right: 30px;
-  }
+  // &__card:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 
   &__icon {
     fill: currentColor;

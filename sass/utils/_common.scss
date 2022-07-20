@@ -20,7 +20,11 @@ body {
 }
 
 .section {
-  padding: 94px 0 94px 0;
+  padding: 60px 0 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0 94px 0;
+  }
 
   &--grey {
     background-color: $add-bg-color;
@@ -28,11 +32,22 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .button {
@@ -74,10 +89,14 @@ body {
 .title {
   color: $title-color;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }
 
 .subtitle {

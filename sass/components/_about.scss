@@ -4,6 +4,10 @@
 
 .about__section {
   padding-top: 0;
+
+  @media screen and (max-width: 1119px) {
+    display: none;
+  }
 }
 
 .about__title {

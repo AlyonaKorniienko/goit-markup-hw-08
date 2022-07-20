@@ -10,12 +10,35 @@
 
 .footer__container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
 
 .footer-contacts {
   &__wrap {
-    margin-right: 70px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+      margin-bottom: 0;
+      align-items: flex-start;
+    }
   }
 
   &__logo {
@@ -25,7 +48,9 @@
   }
 
   &__address {
-    margin-bottom: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     color: $white-text-color;
     font-style: normal;
@@ -33,6 +58,14 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+      align-items: flex-start;
+    }
+  }
+
+  &__location {
+    margin-bottom: 8px;
   }
 
   &__contact {
@@ -58,6 +91,17 @@
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
+}
+
+.social-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
 }
 
 .social {
@@ -90,25 +134,38 @@
 }
 
 .subscr-wrap {
-  margin-left: auto;
+  min-width: 450px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }
 
 .subscr {
   &__form {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   &__input {
-    width: 358px;
+    width: 100%;
     height: 50px;
     padding: 15px 16px;
-    margin-right: 12px;
+
+    margin-bottom: 20px;
 
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: $border-radius;
 
     color: $white-text-color;
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      margin-right: 12px;
+      margin-bottom: 0;
+    }
 
     &:focus-visible {
       outline: transparent;
