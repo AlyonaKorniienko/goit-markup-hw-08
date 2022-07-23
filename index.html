@@ -69,6 +69,54 @@
             >
           </li>
         </ul>
+        <button type="button" class="mobile-open__btn">
+          <svg class="mobile-open__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu-open"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- ----------------------------- Mobile Menu ----------------------------- -->
+      <div class="mobile-menu mobile--is-hidden">
+        <button type="button" class="mobile-close__btn">
+          <svg mobile-close="mobile-close__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+        <div class="container__mobile-menu">
+          <ul class="mobile-menu__nav">
+            <li class="nav__item list">
+              <a href="./index.html" class="nav__link nav__link--current link">Студия</a>
+            </li>
+            <li class="nav__item list">
+              <a href="./portfolio.html" class="nav__link link">Портфолио</a>
+            </li>
+            <li class="nav__item list"><a href="" class="nav__link link">Контакты</a></li>
+          </ul>
+          <div class="mobile-menu__bottom">
+            <ul class="mobile-menu__contact">
+              <li class="contact__item list">
+                <a href="" class="contact__link contact__link--tel link">+38 096 111 11 11</a>
+              </li>
+              <li class="contact__item list">
+                <a href="" class="contact__link link">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mobile-menu__social">
+              <li class="mobile-social__item list">
+                <a class="mobile-social__link link">Instagram</a>
+              </li>
+              <li class="mobile-social__item list">
+                <a class="mobile-social__link link">Twitter</a>
+              </li>
+              <li class="mobile-social__item list">
+                <a class="mobile-social__link link">Facebook</a>
+              </li>
+              <li class="mobile-social__item list">
+                <a class="mobile-social__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -151,19 +199,19 @@
           <ul class="about-grid">
             <li class="list about-grid__item">
               <div class="about-grid__thumb">
-                <img src="./images/box_1.jpg" alt="Изображение" width="370" />
+                <img src="./images/about/box_1.jpg" alt="Изображение" width="370" />
                 <p class="about-grid__label">Десктопные приложения</p>
               </div>
             </li>
             <li class="list about-grid__item">
               <div class="about-grid__thumb">
-                <img src="./images/box_2.jpg" alt="Изображение" width="370" />
+                <img src="./images/about/box_2.jpg" alt="Изображение" width="370" />
                 <p class="about-grid__label">Мобильные приложения</p>
               </div>
             </li>
             <li class="list about-grid__item">
               <div class="about-grid__thumb">
-                <img src="./images/box_3.jpg" alt="Изображение" width="370" />
+                <img src="./images/about/box_3.jpg" alt="Изображение" width="370" />
                 <p class="about-grid__label">Дизайнерские решения</p>
               </div>
             </li>
@@ -180,7 +228,7 @@
           <h2 class="title team__title">Наша команда</h2>
           <ul class="team">
             <li class="list team__card item">
-              <img class="team__photo" src="./images/photo1.jpg" alt="Фото" width="450" />
+              <img class="team__photo" src="./images/team/photo1.jpg" alt="Фото" width="450" />
               <div class="team__descr">
                 <h3 class="subtitle team__name">Игорь Демьяненко</h3>
                 <p class="team__position">Product Designer</p>
@@ -217,7 +265,7 @@
               </div>
             </li>
             <li class="list team__card item">
-              <img class="team__photo" src="./images/photo2.jpg" alt="Фото" width="450" />
+              <img class="team__photo" src="../images/team/photo2.jpg" alt="Фото" width="450" />
               <div class="team__descr">
                 <h3 class="subtitle team__name">Ольга Репина</h3>
                 <p class="team__position">Frontend Developer</p>
@@ -254,7 +302,7 @@
               </div>
             </li>
             <li class="list team__card item">
-              <img class="team__photo" src="./images/photo3.jpg" alt="Фото" width="450" />
+              <img class="team__photo" src="./images/team/photo3.jpg" alt="Фото" width="450" />
               <div class="team__descr">
                 <h3 class="subtitle team__name">Николай Тарасов</h3>
                 <p class="team__position">Marketing</p>
@@ -291,7 +339,7 @@
               </div>
             </li>
             <li class="list team__card item">
-              <img class="team__photo" src="./images/photo4.jpg" alt="Фото" width="450" />
+              <img class="team__photo" src="./images/team/photo4.jpg" alt="Фото" width="450" />
               <div class="team__descr">
                 <h3 class="subtitle team__name">Михаил Ермаков</h3>
                 <p class="team__position">UI Designer</p>
@@ -528,5 +576,6 @@
     </div>
     <!-- --------------------------------- JS ---------------------------------- -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile.js"></script>
   </body>
 </html>

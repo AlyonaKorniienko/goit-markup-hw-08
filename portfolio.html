@@ -30,7 +30,7 @@
     <!--                                Nav menu                                 -->
     <!-- ----------------------------------------------------------------------- -->
 
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="nav">
           <a href="./" class="nav__logo logo link"> <span class="logo--accent">Web</span>Studio</a>
@@ -67,8 +67,56 @@
             >
           </li>
         </ul>
+        <button type="button" class="mobile-open__btn">
+          <svg class="mobile-open__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu-open"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <!-- ----------------------------- Mobile Menu ----------------------------- -->
+      <div class="mobile-menu mobile--is-hidden">
+        <button type="button" class="mobile-close__btn">
+          <svg mobile-close="mobile-close__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+        <div class="container__mobile-menu">
+          <ul class="mobile-menu__nav">
+            <li class="nav__item list">
+              <a href="./index.html" class="nav__link link">Студия</a>
+            </li>
+            <li class="nav__item list">
+              <a href="./portfolio.html" class="nav__link nav__link--current link">Портфолио</a>
+            </li>
+            <li class="nav__item list"><a href="" class="nav__link link">Контакты</a></li>
+          </ul>
+          <div class="mobile-menu__bottom">
+            <ul class="mobile-menu__contact">
+              <li class="contact__item list">
+                <a href="" class="contact__link contact__link--tel link">+38 096 111 11 11</a>
+              </li>
+              <li class="contact__item list">
+                <a href="" class="contact__link link">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mobile-menu__social">
+              <li class="mobile-social__item list">
+                <a class="mobile-social__link link">Instagram</a>
+              </li>
+              <li class="mobile-social__item list">
+                <a class="mobile-social__link link">Twitter</a>
+              </li>
+              <li class="mobile-social__item list">
+                <a class="mobile-social__link link">Facebook</a>
+              </li>
+              <li class="mobile-social__item list">
+                <a class="mobile-social__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <!-- ----------------------------------------------------------------------- -->
     <!--                                  Filer                                  -->
@@ -98,7 +146,7 @@
             <li class="list work__item">
               <a class="work__link link" href="">
                 <div class="overlay">
-                  <img src="./images/portfolio1.jpg" alt="Ноутбук" width="450" />
+                  <img src="./images/portfolio/portfolio1.jpg" alt="Ноутбук" width="450" />
                   <p class="overlay__label">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -115,7 +163,7 @@
             <li class="list work__item">
               <a class="work__link link" href="">
                 <div class="overlay">
-                  <img src="./images/portfolio2.jpg" alt="Ноутбук" width="450" />
+                  <img src="./images/portfolio/portfolio2.jpg" alt="Ноутбук" width="450" />
                   <p class="overlay__label">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -131,7 +179,7 @@
             <li class="list work__item">
               <a class="work__link link" href="">
                 <div class="overlay">
-                  <img src="./images/portfolio3.jpg" alt="Ноутбук" width="450" />
+                  <img src="./images/portfolio/portfolio3.jpg" alt="Ноутбук" width="450" />
                   <p class="overlay__label">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -147,7 +195,7 @@
             <li class="list work__item">
               <a class="work__link link" href="">
                 <div class="overlay">
-                  <img src="./images/portfolio4.jpg" alt="Ноутбук" width="450" />
+                  <img src="./images/portfolio/portfolio4.jpg" alt="Ноутбук" width="450" />
                   <p class="overlay__label">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -163,7 +211,7 @@
             <li class="list work__item">
               <a class="work__link link" href="">
                 <div class="overlay">
-                  <img src="./images/portfolio5.jpg" alt="Ноутбук" width="450" />
+                  <img src="./images/portfolio/portfolio5.jpg" alt="Ноутбук" width="450" />
                   <p class="overlay__label">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -179,7 +227,7 @@
             <li class="list work__item">
               <a class="work__link link" href="">
                 <div class="overlay">
-                  <img src="./images/portfolio6.jpg" alt="Ноутбук" width="450" />
+                  <img src="./images/portfolio/portfolio6.jpg" alt="Ноутбук" width="450" />
                   <p class="overlay__label">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -195,7 +243,7 @@
             <li class="list work__item">
               <a class="work__link link" href="">
                 <div class="overlay">
-                  <img src="./images/portfolio7.jpg" alt="Ноутбук" width="450" />
+                  <img src="./images/portfolio/portfolio7.jpg" alt="Ноутбук" width="450" />
                   <p class="overlay__label">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -211,7 +259,7 @@
             <li class="list work__item">
               <a class="work__link link" href="">
                 <div class="overlay">
-                  <img src="./images/portfolio8.jpg" alt="Ноутбук" width="450" />
+                  <img src="./images/portfolio/portfolio8.jpg" alt="Ноутбук" width="450" />
                   <p class="overlay__label">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -227,7 +275,7 @@
             <li class="list work__item">
               <a class="work__link link" href="">
                 <div class="overlay">
-                  <img src="./images/portfolio9.jpg" alt="Ноутбук" width="450" />
+                  <img src="./images/portfolio/portfolio9.jpg" alt="Ноутбук" width="450" />
                   <p class="overlay__label">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -324,5 +372,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- --------------------------------- JS ---------------------------------- -->
+    <script src="./js/mobile.js"></script>
   </body>
 </html>

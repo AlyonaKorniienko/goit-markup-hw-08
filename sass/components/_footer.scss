@@ -160,11 +160,6 @@
   flex-direction: column;
   align-items: center;
 
-  @media screen and (min-width: 768px) {
-    // flex-basis: 450px;
-    // max-width: 450px;
-  }
-
   @media screen and (min-width: 1200px) {
     margin-left: auto;
     flex-basis: 570px;
@@ -185,7 +180,7 @@
   }
 
   &__input {
-    width: 450px;
+    min-width: 290px;
 
     height: 50px;
     padding: 15px 16px;
@@ -197,6 +192,14 @@
     border-radius: $border-radius;
 
     color: $white-text-color;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 450px;
+    }
 
     @media screen and (min-width: 1200px) {
       width: 358px;

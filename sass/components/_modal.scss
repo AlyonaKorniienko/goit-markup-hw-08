@@ -11,6 +11,8 @@
 
   background: rgba(0, 0, 0, 0.2);
 
+  overflow-y: scroll;
+
   &--is-hidden {
     visibility: hidden;
     opacity: 0;
@@ -27,9 +29,11 @@
   top: 50%;
   left: 50%;
 
-  width: 528px;
+  width: 90%;
   min-height: 581px;
   padding: 40px;
+
+  overflow: auto;
 
   background: $main-bg-color;
   border-radius: $border-radius;
@@ -38,6 +42,14 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 }
 
 .modal-title {
@@ -77,7 +89,6 @@
   }
 
   &__input {
-    // position: relative;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 42px;
@@ -93,6 +104,12 @@
       outline: transparent;
       border: 1px solid $accent-color;
     }
+    &::placeholder {
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.01em;
+    }
+
     &--massage {
       padding: 12px 16px;
       width: 100%;
@@ -122,8 +139,14 @@
   margin-bottom: 30px;
 
   &__label {
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     color: $main-text-color;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
 
   &__link {
